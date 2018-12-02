@@ -11,13 +11,17 @@
 */
 
 /* Imports the font that is used on this page. */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700);*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 
 /* This section sets the defaults for the page, but you may never see changes here if they are overwritten by the div elements below.  */
 html, body {
 	margin: 0;  /* Margin is the amount of space between the border of an element, and the elements outside it. */
 	padding: 0; /* Padding is the amount of space between the border of an element, and the elements inside it. */
+	background-color: #f8f8f8;
+	
 }
 
 body{
@@ -26,11 +30,12 @@ body{
 	color: black; /* Main text color */
 	background: white; /* Main text background color */
 	padding-bottom: 20px; /* You can set padding or margin for one side of an element at a time */
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {                  /* A stands for link, so this section is setting the default characteristics of links. */
-	color: #C41E3A;
-	text-decoration: none;
+	color: #FFD700;
+	text-decoration: none;	
 }
 
 h1 {		     /* This styles the header at the top of the page */
@@ -51,12 +56,13 @@ div.section {
 	padding: 1em;
 	margin-bottom: 0;
 	text-align: justify;
-
+	background-color: #f8f8f8;
 }
+
 
 /* If we want the divs with ids plan and more to look the same, we can put them together */
 #plan, #more {
-	background:#000080;
+	background:#860038;
 	color: white;
 	font: 'Source Sans Pro',Arial, Sans-Serif;
 	background-image: none;  /* replace none with url('image-url') to set a background image  */
@@ -64,7 +70,26 @@ div.section {
 
 /* You can alter the links within a div with the following syntax */
 #plan a {
-	color: #C41E3A;
+	color: #FFD700;
+}
+
+#plan h1 {
+	color: #FFD700;
+	
+}
+
+#more h2{
+	color: #FFD700;
+	
+}
+
+#whoweare h2 {
+	color: #FFD700;
+}
+
+#whoweare a{
+	color: #860038;
+	
 }
 
 /* This alters the appearance of the div with id="signup". */
@@ -72,11 +97,12 @@ div.section {
 	height: 110px;
 	background: white;
 	text-align: center;
+	background-color: #f2f2f2;
 }
 
 /* This alters the appearance of the div with id="whoweare" */
 #whoweare {
-	background: white;
+	background: #f2f2f2;
 	color: black; 
 }
 
@@ -86,5 +112,31 @@ div.section {
 	height: 100%;
 	margin-bottom:1.5em;
 	margin-right: 1em;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f8f8;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #860038 ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+li a:hover {
+    background-color: #FFD700;
 }
 
